@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -11,10 +12,11 @@
             <objects>
                 <tableViewController id="6YJ-hb-Usk" customClass="ViewController" customModule="StreachyHeaders" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" id="kr8-XJ-Usu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="BOg-JI-IeS">
-                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="24H-5H-LVd">
@@ -46,12 +48,12 @@
                                     <exclude reference="zyM-ro-npL"/>
                                 </mask>
                                 <mask key="constraints">
+                                    <exclude reference="M3l-Jl-5PE"/>
+                                    <exclude reference="gzj-4k-XKy"/>
                                     <exclude reference="Ncj-n4-Ppb"/>
                                     <exclude reference="XsF-kf-7eW"/>
                                     <exclude reference="qaq-yV-tc0"/>
                                     <exclude reference="vxX-7M-sVg"/>
-                                    <exclude reference="M3l-Jl-5PE"/>
-                                    <exclude reference="gzj-4k-XKy"/>
                                 </mask>
                             </variation>
                             <variation key="widthClass=compact">
@@ -60,25 +62,27 @@
                                     <include reference="zyM-ro-npL"/>
                                 </mask>
                                 <mask key="constraints">
+                                    <include reference="M3l-Jl-5PE"/>
+                                    <include reference="gzj-4k-XKy"/>
                                     <include reference="Ncj-n4-Ppb"/>
                                     <include reference="XsF-kf-7eW"/>
                                     <include reference="qaq-yV-tc0"/>
                                     <include reference="vxX-7M-sVg"/>
-                                    <include reference="M3l-Jl-5PE"/>
-                                    <include reference="gzj-4k-XKy"/>
                                 </mask>
                             </variation>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="69" id="082-uf-6lE" customClass="NewsItemCell" customModule="StreachyHeaders" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="156" width="600" height="69"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="082-uf-6lE" id="Eiy-Y3-d8V">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="68"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add 2 labels from the Object library to the table view cell and add the relevant " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moj-9h-Lg2">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Entertainment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KL-um-lGm">

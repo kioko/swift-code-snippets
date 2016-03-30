@@ -39,6 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D64436BD1CAC50F400FC1C32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D64FF0DC1CAB071C00C5F294 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D64436BE1CAC511100FC1C32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D64FF0EC1CAB0B2000C5F294 /* NewsItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D64436BF1CAC512000FC1C32 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D64FF0F01CAB0DD300C5F294 /* NewsItemCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		D64FF0CE1CAB071C00C5F294 = {
 			isa = PBXGroup;
 			children = (
@@ -59,13 +83,13 @@
 			isa = PBXGroup;
 			children = (
 				D64FF0DA1CAB071C00C5F294 /* AppDelegate.swift */,
-				D64FF0DC1CAB071C00C5F294 /* ViewController.swift */,
+				D64436BF1CAC512000FC1C32 /* Cell */,
+				D64436BD1CAC50F400FC1C32 /* Controller */,
+				D64436BE1CAC511100FC1C32 /* Model */,
 				D64FF0DE1CAB071C00C5F294 /* Main.storyboard */,
 				D64FF0E11CAB071C00C5F294 /* Assets.xcassets */,
 				D64FF0E31CAB071C00C5F294 /* LaunchScreen.storyboard */,
 				D64FF0E61CAB071C00C5F294 /* Info.plist */,
-				D64FF0EC1CAB0B2000C5F294 /* NewsItem.swift */,
-				D64FF0F01CAB0DD300C5F294 /* NewsItemCell.swift */,
 			);
 			path = StreachyHeaders;
 			sourceTree = "<group>";
@@ -258,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StreachyHeaders/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thomaskioko.kioko.StreachyHeaders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -269,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StreachyHeaders/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thomaskioko.kioko.StreachyHeaders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,6 +320,7 @@
 				D64FF0EB1CAB071C00C5F294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
