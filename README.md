@@ -3,7 +3,7 @@ Swift Code Snippets
 This directory contains swift project samples on some of the cool features as I continue to explore swift. I will include a summary of the things I have learnt.)
 
 ###[Activity Indicator](https://github.com/kioko/swift-code-snippets/tree/master/Activity%20Indicator)
-This project demonstras how to create an activity indicator. Photo credit goes to [@the_mentalyst](http://www.thementalyst.net/)
+This project demonstrates how to create an activity indicator. Photo credit goes to [@the_mentalyst](http://www.thementalyst.net/)
 
 I learnt how to:
 
@@ -40,3 +40,16 @@ I learnt how to:
 <p align="center">
   <img src="https://github.com/kioko/swift-code-snippets/blob/master/Segmented%20Controller/artwork/Segmented%20ControlView.png?raw=true" alt="Final Result"/>
 </p>
+
+####[ProgressView](https://github.com/kioko/swift-code-snippets/tree/master/ProgressView)
+This project demonstrates how to use a progressView.
+
+I learnt how to:
+
+* Implement a progressView.
+
+<p align="center">
+  <img src="https://github.com/kioko/swift-code-snippets/blob/master/ProgressView/artwork/progressBar.png?raw=true" alt="Final Result"/>
+</p>
+
+
