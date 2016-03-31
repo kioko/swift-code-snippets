@@ -9,10 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var progressLabel: UILabel!
+    @IBOutlet weak var progressBar: UIProgressView!
+    
+    var counter:Int = 0 {
+        didSet {
+            let fractionalProgress = Float(counter) / 100.0
+            let animated = counter != 0
+            
+            progressBar.setProgress(fractionalProgress, animated: animated)
+            progressLabel.text = ("\(counter)%")
+        }
+    }
 
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        progressBar.setProgress(0, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +35,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func actionDownload(sender: AnyObject) {
+        progressLabel.text = "0%"
+        self.counter = 0
+        for _ in 0..<100 {
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), {
+                sleep(1)
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.counter += 1
+                    return
+                })
+            })
+        }
+    }
 
 }
 
