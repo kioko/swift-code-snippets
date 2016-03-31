@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Set the progress but and set the initial value to 0
         progressBar.setProgress(0, animated: true)
     }
 
@@ -36,6 +37,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func actionDownload(sender: AnyObject) {
+        //Reset the value of the progress label
         progressLabel.text = "0%"
         self.counter = 0
         for _ in 0..<100 {
