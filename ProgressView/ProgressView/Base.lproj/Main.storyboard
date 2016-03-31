@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProgressView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,91 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Qh-cI-6oK">
+                                <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRD-2A-8ot">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Download"/>
+                                <connections>
+                                    <action selector="actionDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u8I-5g-dwj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlM-na-Azc">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="blN-Z3-Tfd"/>
+                                    <constraint firstAttribute="height" constant="42" id="uPY-y5-h7m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="blN-Z3-Tfd"/>
+                                        <exclude reference="uPY-y5-h7m"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="blN-Z3-Tfd"/>
+                                        <include reference="uPY-y5-h7m"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AlM-na-Azc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0GG-Oo-keM"/>
+                            <constraint firstItem="5Qh-cI-6oK" firstAttribute="centerX" secondItem="SRD-2A-8ot" secondAttribute="centerX" id="FMO-rq-05i"/>
+                            <constraint firstItem="AlM-na-Azc" firstAttribute="centerX" secondItem="SRD-2A-8ot" secondAttribute="centerX" id="W30-i2-4b1"/>
+                            <constraint firstItem="AlM-na-Azc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="84" id="am2-ZX-n1h"/>
+                            <constraint firstItem="5Qh-cI-6oK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="pxV-Ll-7vu"/>
+                            <constraint firstItem="5Qh-cI-6oK" firstAttribute="top" secondItem="AlM-na-Azc" secondAttribute="bottom" constant="65" id="xrZ-ft-Lcc"/>
+                            <constraint firstItem="SRD-2A-8ot" firstAttribute="top" secondItem="5Qh-cI-6oK" secondAttribute="bottom" constant="63" id="z0V-l2-ZPq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="5Qh-cI-6oK"/>
+                                <exclude reference="SRD-2A-8ot"/>
+                                <exclude reference="AlM-na-Azc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0GG-Oo-keM"/>
+                                <exclude reference="W30-i2-4b1"/>
+                                <exclude reference="am2-ZX-n1h"/>
+                                <exclude reference="FMO-rq-05i"/>
+                                <exclude reference="pxV-Ll-7vu"/>
+                                <exclude reference="xrZ-ft-Lcc"/>
+                                <exclude reference="z0V-l2-ZPq"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="5Qh-cI-6oK"/>
+                                <include reference="SRD-2A-8ot"/>
+                                <include reference="AlM-na-Azc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0GG-Oo-keM"/>
+                                <include reference="W30-i2-4b1"/>
+                                <include reference="am2-ZX-n1h"/>
+                                <include reference="FMO-rq-05i"/>
+                                <include reference="pxV-Ll-7vu"/>
+                                <include reference="xrZ-ft-Lcc"/>
+                                <include reference="z0V-l2-ZPq"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="5Qh-cI-6oK" id="GNc-Iu-MIh"/>
+                        <outlet property="progressLabel" destination="AlM-na-Azc" id="eyy-kR-G4x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="243" y="339"/>
         </scene>
     </scenes>
 </document>
