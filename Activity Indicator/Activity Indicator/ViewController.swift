@@ -9,10 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var backgroundImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+        // Create and add the view to the screen.
+        let progressHUD = ProgressHUD(text: "Loading ...")
+        self.view.addSubview(progressHUD)
+        progressHUD.layer.zPosition = 1; //Bring the view to the front
+        // All done!
+        
+        progressHUD.show()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +29,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
+
 
