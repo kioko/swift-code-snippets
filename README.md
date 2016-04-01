@@ -41,6 +41,20 @@ I learnt how to:
   <img src="https://github.com/kioko/swift-code-snippets/blob/master/Segmented%20Controller/artwork/Segmented%20ControlView.png?raw=true" alt="Final Result"/>
 </p>
 
+####[MapKit - LocationDemo](https://github.com/kioko/swift-code-snippets/tree/master/LocationDemo)
+This project demonstrates how to use a mapView and display users location
+
+I learnt how to:
+
+* Implement a MapKit.
+* Get user location
+
+<p align="center">
+  <img src="https://github.com/kioko/swift-code-snippets/blob/master/LocationDemo/artwork/LocationDemo.png?raw=true" alt="Final Result"/>
+</p>
+
+
+
 ####[ProgressView](https://github.com/kioko/swift-code-snippets/tree/master/ProgressView)
 This project demonstrates how to use a progressView.
 
