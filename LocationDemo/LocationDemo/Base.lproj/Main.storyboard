@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f5n-q5-Obb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -44,13 +45,13 @@
                                 <exclude reference="gN7-Ms-YUC"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="067-3G-D0V"/>
                                 <exclude reference="gFA-bn-dIV"/>
                                 <exclude reference="kj5-FL-Y7d"/>
                                 <exclude reference="mDz-dj-FhS"/>
                                 <exclude reference="IZx-Io-Aka"/>
                                 <exclude reference="kE7-g4-Uwy"/>
                                 <exclude reference="vyZ-MZ-3U5"/>
-                                <exclude reference="067-3G-D0V"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -59,13 +60,13 @@
                                 <include reference="gN7-Ms-YUC"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="067-3G-D0V"/>
                                 <include reference="gFA-bn-dIV"/>
                                 <include reference="kj5-FL-Y7d"/>
                                 <include reference="mDz-dj-FhS"/>
                                 <include reference="IZx-Io-Aka"/>
                                 <include reference="kE7-g4-Uwy"/>
                                 <include reference="vyZ-MZ-3U5"/>
-                                <include reference="067-3G-D0V"/>
                             </mask>
                         </variation>
                     </view>
@@ -75,7 +76,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="243" y="350"/>
+            <point key="canvasLocation" x="1564.5" y="232"/>
+        </scene>
+        <!--Favorite Places-->
+        <scene sceneID="488-XC-DoX">
+            <objects>
+                <tableViewController id="rmb-Ig-262" customClass="TableViewController" customModule="LocationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LDQ-6Y-x6k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="ZkE-Xg-bYB">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZkE-Xg-bYB" id="Xau-aa-ZSq">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="l88-7l-e82"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rmb-Ig-262" id="RAY-7E-oMB"/>
+                            <outlet property="delegate" destination="rmb-Ig-262" id="LEQ-QH-WRM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Favorite Places" id="QF3-qt-uMJ">
+                        <barButtonItem key="rightBarButtonItem" image="add" id="pZh-5C-K13">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="newPlace" id="tRJ-ne-Mgo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Np-zq-Yu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730.5" y="232"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="m1O-m9-RTI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f5n-q5-Obb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mev-Re-meo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rmb-Ig-262" kind="relationship" relationship="rootViewController" id="8XN-dc-ncr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgk-gc-ajU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-187.5" y="232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add" width="29" height="29"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tRJ-ne-Mgo"/>
+    </inferredMetricsTieBreakers>
 </document>
