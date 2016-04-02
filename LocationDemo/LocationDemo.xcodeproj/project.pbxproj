@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D689127F1CAFCFB400443248 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D689127E1CAFCFB400443248 /* TableViewController.swift */; };
 		D6F475011CAEFB0600E6D205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F475001CAEFB0600E6D205 /* AppDelegate.swift */; };
 		D6F475031CAEFB0600E6D205 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F475021CAEFB0600E6D205 /* ViewController.swift */; };
 		D6F475061CAEFB0600E6D205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F475041CAEFB0600E6D205 /* Main.storyboard */; };
 		D6F475081CAEFB0600E6D205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F475071CAEFB0600E6D205 /* Assets.xcassets */; };
 		D6F4750B1CAEFB0600E6D205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F475091CAEFB0600E6D205 /* LaunchScreen.storyboard */; };
+		D6F475131CAF005500E6D205 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F475121CAF005500E6D205 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D689127E1CAFCFB400443248 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D6F474FD1CAEFB0600E6D205 /* LocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F475001CAEFB0600E6D205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6F475021CAEFB0600E6D205 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D6F475071CAEFB0600E6D205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6F4750A1CAEFB0600E6D205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6F4750C1CAEFB0600E6D205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6F475121CAF005500E6D205 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F475131CAF005500E6D205 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D68912801CAFCFC600443248 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6F475021CAEFB0600E6D205 /* ViewController.swift */,
+				D689127E1CAFCFB400443248 /* TableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		D6F474F41CAEFB0600E6D205 = {
 			isa = PBXGroup;
 			children = (
 				D6F474FF1CAEFB0600E6D205 /* LocationDemo */,
 				D6F474FE1CAEFB0600E6D205 /* Products */,
+				D6F475141CAF005E00E6D205 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +70,21 @@
 			isa = PBXGroup;
 			children = (
 				D6F475001CAEFB0600E6D205 /* AppDelegate.swift */,
-				D6F475021CAEFB0600E6D205 /* ViewController.swift */,
+				D68912801CAFCFC600443248 /* ViewControllers */,
 				D6F475041CAEFB0600E6D205 /* Main.storyboard */,
 				D6F475071CAEFB0600E6D205 /* Assets.xcassets */,
 				D6F475091CAEFB0600E6D205 /* LaunchScreen.storyboard */,
 				D6F4750C1CAEFB0600E6D205 /* Info.plist */,
 			);
 			path = LocationDemo;
+			sourceTree = "<group>";
+		};
+		D6F475141CAF005E00E6D205 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6F475121CAF005500E6D205 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6F475031CAEFB0600E6D205 /* ViewController.swift in Sources */,
+				D689127F1CAFCFB400443248 /* TableViewController.swift in Sources */,
 				D6F475011CAEFB0600E6D205 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +274,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thomaskioko.kioko.LocationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -261,6 +286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thomaskioko.kioko.LocationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,6 +312,7 @@
 				D6F475111CAEFB0600E6D205 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
