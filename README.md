@@ -47,10 +47,14 @@ This project demonstrates how to use a mapView and display users location
 I learnt how to:
 
 * Implement a MapKit.
-* Get user location
+* Get user location.
+* Add Annotations - Markers
+* Use guestures
+* Reload data in a TableView
+* Use Segues for navigation
 
 <p align="center">
-  <img src="https://github.com/kioko/swift-code-snippets/blob/master/LocationDemo/artwork/LocationDemo.png?raw=true" alt="Final Result"/>
+  <img src="https://github.com/kioko/swift-code-snippets/blob/master/LocationDemo/artwork/LocationAdded.png?raw=true" alt="Final Result"/>
 </p>
 
 
