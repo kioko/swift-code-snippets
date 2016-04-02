@@ -23,6 +23,7 @@ class TableViewController: UITableViewController {
         
         //Check if places is empty. If true, set a default location
         if places.count == 1 {
+            //Add data to the TableView
             places.removeAtIndex(0)
             places.append(["name":"Taj Mahal","lat":"27.175277","lon":"78.042128"])
         }
