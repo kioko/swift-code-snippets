@@ -70,4 +70,15 @@ I learnt how to:
   <img src="https://github.com/kioko/swift-code-snippets/blob/master/ProgressView/artwork/progressBar.png?raw=true" alt="Final Result"/>
 </p>
 
+####[Pull to Refresh](https://github.com/kioko/swift-code-snippets/tree/master/PullToRefresh)
+This project demonstrates how implement pull-to-refresh.
+
+I learnt how to:
+
+* Implement pull to refresh.
+
+<p align="center">
+  <img src="https://github.com/kioko/swift-code-snippets/blob/master/PullToRefresh/artwork/PullToRefresh.gif?raw=true" alt="Final Result"/>
+</p>
+
 
