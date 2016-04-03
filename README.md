@@ -57,6 +57,20 @@ I learnt how to:
   <img src="https://github.com/kioko/swift-code-snippets/blob/master/LocationDemo/artwork/LocationAdded.png?raw=true" alt="Final Result"/>
 </p>
 
+###[TableView Search](https://github.com/kioko/swift-code-snippets/tree/master/TableViewSearch)
+This project demonstrates how to add search functionality to a tableView.
+
+I learnt how to:
+
+* Implement SearchView.
+* Use pods.
+
+####Final Result
+
+<p align="center">
+  <img src="https://github.com/kioko/swift-code-snippets/blob/master/TableViewSearch/artwork/TableViewSearch.gif?raw=true" alt="Final Result"/>
+</p>
+
 
 
 ####[ProgressView](https://github.com/kioko/swift-code-snippets/tree/master/ProgressView)
