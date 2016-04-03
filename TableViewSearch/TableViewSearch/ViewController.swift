@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UIColor_Hex_Swift
 
 class ViewController: UITableViewController, UISearchResultsUpdating {
     
@@ -30,8 +31,11 @@ class ViewController: UITableViewController, UISearchResultsUpdating {
             controller.searchResultsUpdater = self
             controller.dimsBackgroundDuringPresentation = false
             controller.searchBar.sizeToFit()
-        
             
+            //Style searchbar
+            controller.searchBar.barTintColor = UIColor(rgba: "#ff9900")
+        
+            //Add the searchBar as a header to the tableView
             self.tableView.tableHeaderView = controller.searchBar
             
             return controller
