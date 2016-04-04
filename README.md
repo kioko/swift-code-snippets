@@ -27,6 +27,22 @@ I learnt how to:
   <img src="https://github.com/kioko/swift-code-snippets/blob/master/StreachyHeaders/artwork/appDemo.gif?raw=true" alt="Final Result"/>
 </p>
 
+####[Json Parsing](https://github.com/kioko/swift-code-snippets/tree/master/JsonParsing)
+This project demonstrates how parse JSON.
+
+I learnt how to:
+
+* Make Http Calls
+* Parse JSON data
+* Use a scrollView
+* Create custom protocols
+* Style font
+
+<p align="center">
+  <img src="https://github.com/kioko/swift-code-snippets/blob/master/JsonParsing/artwork/JsonParsingDemo.gif?raw=true" alt="Final Result"/>
+</p>
+
+
 
 ####[Segmented Controler](https://github.com/kioko/swift-code-snippets/tree/master/Segmented%20Controller)
 This project demonstrates how to use a segmented control.
