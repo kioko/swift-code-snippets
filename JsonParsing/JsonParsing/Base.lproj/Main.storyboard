@@ -21,7 +21,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBI-nW-Mgr">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BqB-LQ-KwJ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BqB-LQ-KwJ">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="205" id="9Vo-ue-svI"/>
@@ -83,7 +83,9 @@
                                     <constraint firstItem="Ykf-ZJ-lBe" firstAttribute="top" secondItem="fe2-9B-lTx" secondAttribute="bottom" constant="8" id="Fdx-BP-NXX"/>
                                     <constraint firstItem="BqB-LQ-KwJ" firstAttribute="top" secondItem="lBI-nW-Mgr" secondAttribute="top" constant="85" id="GTJ-R9-chq"/>
                                     <constraint firstAttribute="trailing" secondItem="KAg-cE-Pur" secondAttribute="trailing" constant="8" id="Gw1-j7-ItX"/>
-                                    <constraint firstItem="fe2-9B-lTx" firstAttribute="top" secondItem="BqB-LQ-KwJ" secondAttribute="bottom" constant="26" id="JVg-0I-aB4"/>
+                                    <constraint firstItem="fe2-9B-lTx" firstAttribute="top" secondItem="BqB-LQ-KwJ" secondAttribute="bottom" constant="26" id="JVg-0I-aB4">
+                                        <variation key="widthClass=compact" constant="8"/>
+                                    </constraint>
                                     <constraint firstAttribute="trailing" secondItem="kOy-4S-OeA" secondAttribute="trailing" constant="8" id="KSm-ru-iH3"/>
                                     <constraint firstAttribute="trailing" secondItem="A1C-bz-FZa" secondAttribute="trailing" constant="8" id="NTG-KN-8Q3"/>
                                     <constraint firstItem="kOy-4S-OeA" firstAttribute="leading" secondItem="lBI-nW-Mgr" secondAttribute="leading" constant="8" id="NrV-A0-hJ2"/>
@@ -263,6 +265,7 @@
                         <outlet property="ratingLabel" destination="A1C-bz-FZa" id="ptV-ZL-sNW"/>
                         <outlet property="releaseDateLabel" destination="kOy-4S-OeA" id="sKl-Ju-jvd"/>
                         <outlet property="searchBar" destination="alq-jO-L0f" id="kuH-yy-Msn"/>
+                        <outlet property="titleLabel" destination="fe2-9B-lTx" id="pht-qN-JQD"/>
                         <outlet property="tomatoeRating" destination="Ykf-ZJ-lBe" id="2M8-HN-5iH"/>
                     </connections>
                 </viewController>
