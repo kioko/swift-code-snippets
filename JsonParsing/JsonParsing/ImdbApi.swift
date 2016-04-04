@@ -1,6 +1,7 @@
 //
 //  ImdbApi.swift
-//  JsonParsing
+//  This class makes the API call to OMDB APi and passes a JSON result to the view
+//  controller that extends it.
 //
 //  Created by Kioko on 04/04/2016.
 //  Copyright © 2016 Thomas Kioko. All rights reserved.
@@ -56,9 +57,13 @@ class ImdbApi {
                             ) as? Dictionary<String, String>
                         
                         if let apiDelegate = self.imdbDelegate{
+                            
                             dispatch_async(dispatch_get_main_queue()){
+                                
+                                //TODO:: Dismiss Dialog
                                 if let jsonResult = jsonResult{
-                                    //TODO:: Dismiss Dialog
+                                    
+                                    //Pass the result to the json
                                     apiDelegate.didFinishImdbSearch(jsonResult)
                                 }
                             }
