@@ -38,8 +38,6 @@ class ImdbApi {
             let urlPath = NSURL(string: "http://www.omdbapi.com/?t="
                 + "\(spacelessString)&tomatoes=true")
             
-            print(urlPath)
-            
             let session = NSURLSession.sharedSession()
             
             if let urlPath = urlPath{
