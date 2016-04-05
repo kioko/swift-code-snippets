@@ -1,7 +1,3 @@
-
-# Created by https://www.gitignore.io/api/swift
-
-### Swift ###
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -20,6 +16,9 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+xcuserdata
+
+*CollectionViewDemo/CollectionViewDemo.xcodeproj
 
 ## Other
 *.moved-aside
@@ -65,4 +64,3 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
-
