@@ -12,6 +12,7 @@
 		D6B087681CB4333400C503C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B087661CB4333400C503C5 /* Main.storyboard */; };
 		D6B0876A1CB4333400C503C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B087691CB4333400C503C5 /* Assets.xcassets */; };
 		D6B0876D1CB4333400C503C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B0876B1CB4333400C503C5 /* LaunchScreen.storyboard */; };
+		D6B087751CB4387400C503C5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D6B087741CB4387400C503C5 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D6B087691CB4333400C503C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6B0876C1CB4333400C503C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6B0876E1CB4333400C503C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B087741CB4387400C503C5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		D6B087561CB4333400C503C5 = {
 			isa = PBXGroup;
 			children = (
+				D6B087741CB4387400C503C5 /* .gitignore */,
 				D6B087611CB4333400C503C5 /* CollectionViewDemo */,
 				D6B087601CB4333400C503C5 /* Products */,
 			);
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B087751CB4387400C503C5 /* .gitignore in Resources */,
 				D6B0876D1CB4333400C503C5 /* LaunchScreen.storyboard in Resources */,
 				D6B0876A1CB4333400C503C5 /* Assets.xcassets in Resources */,
 				D6B087681CB4333400C503C5 /* Main.storyboard in Resources */,

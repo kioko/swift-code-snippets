@@ -127,7 +127,7 @@ class ViewController: UIViewController, ImdbApiControllerDelegate, UISearchBarDe
         
     }
     
-    //Hide keyboard when the user taps outside
+    //Hide keyboard when the user taps outside 
     func gestureTapInView(gesture : UITapGestureRecognizer){
         self.searchBar.resignFirstResponder()
     }

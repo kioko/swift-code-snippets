@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		D689128E1CB0602000443248 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D689128D1CB0602000443248 /* AppDelegate.swift */; };
-		D68912901CB0602000443248 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D689128F1CB0602000443248 /* ViewController.swift */; };
 		D68912931CB0602000443248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68912911CB0602000443248 /* Main.storyboard */; };
 		D68912951CB0602000443248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D68912941CB0602000443248 /* Assets.xcassets */; };
 		D68912981CB0602000443248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68912961CB0602000443248 /* LaunchScreen.storyboard */; };
+		D6CAA0EE1CB1880200F80E37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAA0ED1CB1880200F80E37 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D689128A1CB0602000443248 /* PullToRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullToRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D689128D1CB0602000443248 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D689128F1CB0602000443248 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D68912921CB0602000443248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D68912941CB0602000443248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D68912971CB0602000443248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D68912991CB0602000443248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CAA0ED1CB1880200F80E37 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				D689128D1CB0602000443248 /* AppDelegate.swift */,
-				D689128F1CB0602000443248 /* ViewController.swift */,
+				D6CAA0ED1CB1880200F80E37 /* ViewController.swift */,
 				D68912911CB0602000443248 /* Main.storyboard */,
 				D68912941CB0602000443248 /* Assets.xcassets */,
 				D68912961CB0602000443248 /* LaunchScreen.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D68912901CB0602000443248 /* ViewController.swift in Sources */,
+				D6CAA0EE1CB1880200F80E37 /* ViewController.swift in Sources */,
 				D689128E1CB0602000443248 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,7 +251,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PullToRefresh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thomaskioko.kioko.PullToRefresh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomaskioko.kioko.pulltorefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -262,7 +262,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PullToRefresh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thomaskioko.kioko.PullToRefresh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomaskioko.kioko.pulltorefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -286,6 +286,7 @@
 				D689129E1CB0602000443248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
