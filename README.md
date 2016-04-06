@@ -42,7 +42,19 @@ I learnt how to:
   <img src="https://github.com/kioko/swift-code-snippets/blob/master/JsonParsing/artwork/JsonParsingDemo.gif?raw=true" alt="Final Result"/>
 </p>
 
+####[Collection View](https://github.com/kioko/swift-code-snippets/tree/master/CollectionViewDemo)
+This project demonstrates how use a collection view. Images are fetched from [Flickr API](https://www.flickr.com/services/api/)
 
+I learnt how to:
+
+* Implement a collectionView
+* Make Http Calls
+* Parse JSON data
+* Style the searchBar
+
+<p align="center">
+  <img src="https://github.com/kioko/swift-code-snippets/blob/master/CollectionViewDemo/artwork/CollectionViewDemo.gif?raw=true" alt="Final Result"/>
+</p>
 
 ####[Segmented Controler](https://github.com/kioko/swift-code-snippets/tree/master/Segmented%20Controller)
 This project demonstrates how to use a segmented control.
