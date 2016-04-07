@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var profileImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Style the profile picture
+        styleProfilePucture(profileImageView)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +24,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //This method is used to style an ImageView
+    func styleProfilePucture(profileImageView: UIImageView){
+        
+        profileImageView.layer.masksToBounds = true
+        profileImageView.layer.borderColor = UIColor.whiteColor().CGColor
+        profileImageView.clipsToBounds = true
+        profileImageView.layer.cornerRadius  = CGFloat(roundf(Float(profileImageView.frame.size.width/2.3)))
+        profileImageView.layer.borderWidth = 5;
+        
+    }
 
 }
 
