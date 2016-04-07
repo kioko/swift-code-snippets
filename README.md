@@ -100,6 +100,16 @@ I learnt how to:
 </p>
 
 
+####[Circular ImageView](https://github.com/kioko/swift-code-snippets/tree/master/CircularImageView)
+This project demonstrates how to style an imageview.
+
+I learnt how to:
+
+* Make an ImageView circular
+
+<p align="center">
+  <img src="https://github.com/kioko/swift-code-snippets/blob/master/CircularImageView/artwork/CircularImageView.png?raw=true" alt="Final Result"/>
+</p>
 
 ####[ProgressView](https://github.com/kioko/swift-code-snippets/tree/master/ProgressView)
 This project demonstrates how to use a progressView.
