@@ -87,6 +87,7 @@ class ViewController: UIViewController, UICollectionViewDelegate,  UICollectionV
                 //clear the text
                 searchBar.text = ""
                 
+                self.searches.removeAll()
                 self.searches.insert(results!, atIndex: 0)
                 
                 //Reload the view
@@ -156,8 +157,8 @@ class ViewController: UIViewController, UICollectionViewDelegate,  UICollectionV
         //Get the item per index.
         let flickrPhoto = photoForIndexPath(indexPath)
         cell.backgroundColor = UIColor.lightGrayColor() //Set the background color of the cell
-        // Load the image to the imageView.
-        cell.photoImageView.image = flickrPhoto.largeImage
+        
+        loadImageAsyncronously(flickrPhoto, imageView: cell.photoImageView)
         
         return cell
     }
@@ -165,6 +166,28 @@ class ViewController: UIViewController, UICollectionViewDelegate,  UICollectionV
     
     func didFinishSearch(jsonResult: NSDictionary) {
         //TODO:: Check for the response status and return the correct response
+    }
+    
+    ///Load images asynchronously
+    func loadImageAsyncronously(flickerPhoto: FlickrPhoto, imageView: UIImageView){
+        
+        let donwloadQueue = dispatch_queue_create("downloadTask", nil)
+        
+        dispatch_async(donwloadQueue){
+            
+            let imageData = NSData(contentsOfURL : flickerPhoto.flickrImageURL("m"))
+            var image : UIImage?
+            
+            if imageData != nil{
+                flickerPhoto.largeImage = UIImage(data: imageData!)
+                image = UIImage(data: imageData!)!
+            }
+            
+            dispatch_async(dispatch_get_main_queue()){
+                imageView.image = image
+            }
+        
+        }
     }
     
 }
