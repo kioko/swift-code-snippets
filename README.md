@@ -56,6 +56,17 @@ I learnt how to:
   <img src="https://github.com/kioko/swift-code-snippets/blob/master/CollectionViewDemo/artwork/CollectionViewDemo.gif?raw=true" alt="Final Result"/>
 </p>
 
+####[Asychronous Image Loading](https://github.com/kioko/swift-code-snippets/tree/master/CollectionViewDemo)
+This project demonstrates how load images asychronous.
+
+I learnt how to:
+
+* Load images asynchronously
+
+<p align="center">
+  <img src="https://github.com/kioko/swift-code-snippets/blob/master/CollectionViewDemo/artwork/AsyncImageLoading.gif?raw=true" alt="Final Result"/>
+</p>
+
 ####[Segmented Controler](https://github.com/kioko/swift-code-snippets/tree/master/Segmented%20Controller)
 This project demonstrates how to use a segmented control.
 
