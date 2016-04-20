@@ -144,4 +144,16 @@ I learnt how to:
   <img src="https://github.com/kioko/swift-code-snippets/blob/master/PullToRefresh/artwork/PullToRefresh.gif?raw=true" alt="Final Result"/>
 </p>
 
+####[AlertView](https://github.com/kioko/swift-code-snippets/tree/master/AlertView)
+This project demonstrates how use an AlertView.
+
+I learnt how to:
+
+* Implement an AlertView.
+
+<p align="center">
+  <img src="https://github.com/kioko/swift-code-snippets/blob/master/AlertView/artwork/AlertView.png?raw=true" alt="Final Result"/>
+</p>
+
+
 
