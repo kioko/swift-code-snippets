@@ -155,5 +155,16 @@ I learnt how to:
   <img src="https://github.com/kioko/swift-code-snippets/blob/master/AlertView/artwork/AlertView.png?raw=true" alt="Final Result"/>
 </p>
 
+####[Custom AlertView](https://github.com/kioko/swift-code-snippets/tree/master/CusstomAlertView)
+This project demonstrates how to create an editable UITextField inside a UIAlertViewController.
+
+I learnt how to:
+
+* Add UITextField to AlertViewController
+
+<p align="center">
+  <img src="https://github.com/kioko/swift-code-snippets/blob/master/CusstomAlertView/artwork/CustomAlertViewController.png?raw=true" alt="Final Result"/>
+</p>
+
 
 
