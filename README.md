@@ -166,5 +166,16 @@ I learnt how to:
   <img src="https://github.com/kioko/swift-code-snippets/blob/master/CusstomAlertView/artwork/CustomAlertViewController.png?raw=true" alt="Final Result"/>
 </p>
 
+####[Google Admob](https://github.com/kioko/swift-code-snippets/tree/master/Admob)
+This project demonstrates how implement Google Admob into your project.
+
+I learnt how to:
+
+* Add Google Admob
+
+<p align="center">
+  <img src="https://github.com/kioko/swift-code-snippets/blob/master/Admob/artwork/admob_artwork.png?raw=true" alt="Final Result"/>
+</p>
+
 
 
