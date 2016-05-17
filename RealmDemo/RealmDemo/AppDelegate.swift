@@ -15,7 +15,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        //Set the background color of the view
+        window?.backgroundColor = UIColor.whiteColor()
+        
+        //Create an instance of View controller class
+        let viewController = ViewController(nibName: nil, bundle: nil)
+       
+        //Put the view controller in UINavigationController
+        let navController = UINavigationController(rootViewController: viewController)
+        //Set the title of the Navigation bar
+        navController.navigationBar.topItem?.title = "Realm Demo"
+        
+        //set navController as teh rootViewController
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible() //Make the window visible
         return true
     }
 
