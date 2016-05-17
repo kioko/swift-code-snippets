@@ -177,5 +177,17 @@ I learnt how to:
   <img src="https://github.com/kioko/swift-code-snippets/blob/master/Admob/artwork/admob_artwork.png?raw=true" alt="Final Result"/>
 </p>
 
+####[Realm Demo](https://github.com/kioko/swift-code-snippets/tree/master/RealmDemo)
+This project demonstrates how to use [Realm](https://realm.io/docs/swift/latest/) as a storage option on the app.
+
+I learnt how to:
+
+* Use Realm to store data
+
+<p align="center">
+  <img src="https://github.com/kioko/swift-code-snippets/blob/master/RealmDemo/artwork/real_demo.png?raw=true" alt="Final Result"/>
+</p>
+
+
 
 
