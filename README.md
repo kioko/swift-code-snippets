@@ -2,7 +2,7 @@ Swift Code Snippets
 -----------------------
 This directory contains swift project samples on some of the cool features as I continue to explore swift. I will include a summary of the things I have learnt.)
 
-###[Activity Indicator](https://github.com/kioko/swift-code-snippets/tree/master/Activity%20Indicator)
+### [Activity Indicator](https://github.com/kioko/swift-code-snippets/tree/master/Activity%20Indicator)
 This project demonstrates how to create an activity indicator. Photo credit goes to [@the_mentalyst](http://www.thementalyst.net/)
 
 I learnt how to:
